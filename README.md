@@ -226,6 +226,10 @@ print(settings.filtering.order)
 
 ## Best practices
 
+- Write a README.md (replacing this file) with a short explanation of the repository: what is the
+  goal, and how can people use it? For simple projects, this could suffice as
+  documentation. For more complex projects, it should refer to the
+  documentation. 
 - All interim and processed data should be derived from source data and
 annotations. This derivation should be reproducible, such that interim and
 processed files can be removed without losing information.
