@@ -256,7 +256,7 @@ e.g., a pandas data frame, should be stored as interim data.
   Avoid looping over measurements or subjects for complex analysis workflows in
   long script files. The best way to prevent this is by creating functions that
   do all the work. A script file then can loop over subjects and call the
-  funtion for all subjects. However, this is not always a good option,
+  function for all subjects. However, this is not always a good option,
   especially in the early phases of analysis. A secondary option is to have a
   script file that performs analysis on a single subject. 
 
