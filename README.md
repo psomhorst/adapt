@@ -32,9 +32,12 @@ folder.
 
 ## Create a virtual environment and install your project
 
+To create a virtual environment and install your project, run the commands below
+in your terminal. 
+
 ### Option 1: `conda` (recommended)
 
-1. Create a virtual environment
+1. Create a virtual environment.
 
    ```bash
    conda create --prefix "./.venv" --python 3.13
@@ -46,7 +49,7 @@ folder.
    documentation](https://docs.conda.io/projects/conda/en/latest/commands/create.html)
    for details. 
 
-2. Activate virtual environment
+2. Activate the virtual environment.
 
    ```bash
    conda activate ./.venv
@@ -72,9 +75,9 @@ folder.
 
 2. Run your code.
 
-```bash
-uv python analysis/example_script.py
-```
+   ```bash
+   uv python analysis/example_script.py
+   ```
 
 
 ## Directory structure
