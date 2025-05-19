@@ -133,9 +133,13 @@ to number them in order of logical operation. E.g.:
   final version of the data in `data/processed/`
 - `analysis/04-calculate_something.py` generates output data
 
-Reusable should go in the `src/` directory. As a rule: never import code from a
-file in `analysis/`, but import code from modules in `src/`. The package has
-been set up such that any module inside `src/` can be directly imported. E.g.: 
+Reusable code should go in the `src/` directory. As a rule: never import code from a
+file in `analysis/`, but import code from modules in `src/`. We recommend a
+workflow where you develop code as a script or notebook and — once finished —
+formalize it in functions or classes in modules inside `src/`. 
+
+The package has been set up such that any module inside `src/` can be directly
+imported. E.g.: 
 
 - `src/helper.py` can be imported using `import helper` 
 - `src/plotting/plot_dataset.py` can be imported using `from plotting import
