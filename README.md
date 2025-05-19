@@ -186,10 +186,14 @@ The pyproject file contains information about your project. You should give the
 project a suitable name, description and author(s) information. The version of
 the project is stored in the file `src/__version__.py`. 
 
-Project dependencies should be listed in `dependencies`. The only template
-dependency is [OmegaConf](https://omegaconf.readthedocs.io/en/2.3_branch/) for
-configuration management. After changing dependencies, update your installation
-using `pip install -e .` or `uv sync`.
+Project dependencies, i.e., packages and libraries your code requires, should be
+listed in `dependencies`. The only template dependency is
+[OmegaConf](https://omegaconf.readthedocs.io/en/2.3_branch/) for configuration
+management. After updating dependencies[^1], update your installation using `pip
+install -e .` or `uv sync`.
+
+[^1]: If you use `uv` you can add a dependency by running `uv add <package>` in
+    a terminal instead of manually editing `pyproject.toml`.
 
 Documentation on `pyproject.toml` can be found [here](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/).
 
