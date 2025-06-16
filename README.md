@@ -29,6 +29,10 @@ folder.
 
 <!-- TODO: add link to repo -->
 
+## Set your project name
+
+Before installing the project, set the project name. See [pyproject.toml]
+(#pyprojecttoml).
 
 ## Create a virtual environment and install your project
 
@@ -65,15 +69,19 @@ in your terminal.
 
 ### Option 2: `uv` (advanced users)
 
-1. Create a virtual environment and install project as package.
+1. Create a virtual environment
 
-   **NB: Before installing the project, set the project name. See [pyproject.toml](#pyprojecttoml).**
-
-   ```bash
-   uv sync
+   ```
+   uv venv --python 3.13
    ```
 
-2. Run your code.
+2. Install the current project.
+  
+   ```bash
+   uv pip install -e .
+   ```
+
+3. Run your code.
 
    ```bash
    uv python analysis/example_script.py
@@ -108,9 +116,9 @@ in your terminal.
 └── TEMPLATE.md             # This file
 ```
 
-**Note**: Directories in this template that should otherwise be empty contain a
+**Note**: Directories in this template that are otherwise empty contain a
 .gitkeep file. These files only exist to have git clone the directories. You can
-remove these files after your repository is cloned. 
+remove these files after your repository is cloned.
 
 All data should go in the `data/` folder. `data/source/` only contains source
 data. Source data should be read-only. `data/annotations/` should contain extra
